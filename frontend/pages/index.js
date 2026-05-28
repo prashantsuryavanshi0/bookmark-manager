@@ -1,7 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 
-const apiBase = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000';
-
+const apiBase = 'https://bookmark-manager-2.onrender.com';
 const validateUrl = (value) => {
   try {
     const url = new URL(value);
