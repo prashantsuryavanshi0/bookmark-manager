@@ -48,6 +48,16 @@ notepad .env
 
 - For Vercel: add `MONGODB_URI` under Project → Settings → Environment Variables and redeploy.
 
+## Submission
+
+- GitHub repository: https://github.com/prashantsuryavanshi0/bookmark-manager
+- Live frontend: https://bookmark-manager-frontend-two.vercel.app/
+- Notes:
+  - Do NOT commit real secrets. `.env.example` contains a placeholder for `MONGODB_URI`; create a private `.env` locally with your real value.
+  - The backend runs locally at `http://localhost:5000` by default. The frontend uses `NEXT_PUBLIC_API_URL` to point to a deployed backend if provided.
+
+This project satisfies the assignment requirements: Next.js frontend, Express + MongoDB backend, REST APIs, URL validation, duplicate prevention, client-side filtering (favorites and tags), and responsive UI.
+
 ## Notes
 
 - API base URL is configured in `frontend/pages/index.js` via `NEXT_PUBLIC_API_URL`, defaulting to `http://localhost:5000`.
